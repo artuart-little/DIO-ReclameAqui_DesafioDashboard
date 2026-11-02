@@ -104,11 +104,6 @@
     </div>
 
     <script>
-        // Regista o plugin de DataLabels globalmente
-        Chart.register(ChartDataLabels);
-
-        const rawData = [{"sale_id":7,"SaleDate":"2024-03-14","customer_name":"SOPHIA Miller","PorscheModel":"911 Turbo S","ModelYear":2024,"SalesPrice":235000.0,"VehicleMileage":1200,"PayMethod":"Wire Transfer","City":"Seattle","State":"WA","salesperson":"AMANDA scott","DeliveryStatus":"Delivered"},{"sale_id":8,"SaleDate":"2024-04-18","customer_name":"Daniel-Jones","PorscheModel":"Cayenne Coupe","ModelYear":2023,"SalesPrice":112750.0,"VehicleMileage":6400,"PayMethod":"Financing","City":"Austin","State":"TX","salesperson":"Brian Hall","DeliveryStatus":"In Transit"},{"sale_id":10,"SaleDate":"2024-05-22","customer_name":"Ethan Wilson","PorscheModel":"Taycan 4S","ModelYear":2024,"SalesPrice":121000.0,"VehicleMileage":0,"PayMethod":"Bank Transfer","City":"Los Angeles","State":"CA","salesperson":"Thomas King","DeliveryStatus":"Delivered"},{"sale_id":11,"SaleDate":"2024-08-06","customer_name":"Ava Martinez","PorscheModel":"Panamera 4","ModelYear":2023,"SalesPrice":104500.0,"VehicleMileage":14500,"PayMethod":"Credit Card","City":"Miami","State":"FL","salesperson":"LISA ray","DeliveryStatus":"Cancelled"},{"sale_id":12,"SaleDate":"2024-07-11","customer_name":"Noah Davis","PorscheModel":"911 Carrera S","ModelYear":2020,"SalesPrice":96300.0,"VehicleMileage":41000,"PayMethod":"Lease","City":"New York","State":"NY","salesperson":"Mark Evans","DeliveryStatus":"Delivered"},{"sale_id":14,"SaleDate":"2024-08-19","customer_name":"Liam Rodriguez","PorscheModel":"718 Boxster","ModelYear":2021,"SalesPrice":73500.0,"VehicleMileage":22300,"PayMethod":"Debit Card","City":"Chicago","State":"IL","salesperson":"George Bell","DeliveryStatus":"Shipped"},{"sale_id":15,"SaleDate":"2024-09-02","customer_name":"Mia Hernandez","PorscheModel":"Macan GTS","ModelYear":2024,"SalesPrice":95000.0,"VehicleMileage":3500,"PayMethod":"Financing","City":"Phoenix","State":"AZ","salesperson":"Helen Brooks","DeliveryStatus":"In Transit"},{"sale_id":16,"SaleDate":"2024-09-17","customer_name":"James Lopez","PorscheModel":"Taycan Turbo","ModelYear":2023,"SalesPrice":153200.5,"VehicleMileage":11,"PayMethod":"ACH Payment","City":"Dallas","State":"TX","salesperson":"samuel price","DeliveryStatus":"Delivered"},{"sale_id":18,"SaleDate":"2024-05-11","customer_name":"Benjamin Allen","PorscheModel":"Panamera Turbo S","ModelYear":2022,"SalesPrice":132000.0,"VehicleMileage":19250,"PayMethod":"Cash","City":"San Jose","State":"CA","salesperson":"Angela Green","DeliveryStatus":"Delivered"},{"sale_id":19,"SaleDate":"2024-12-12","customer_name":"Amelia King","PorscheModel":"Cayenne Turbo GT","ModelYear":2024,"SalesPrice":188000.0,"VehicleMileage":2100,"PayMethod":"Crypto Payment","City":"Houston","State":"TX","salesperson":"Victor Stone","DeliveryStatus":"Awaiting Delivery"},{"sale_id":20,"SaleDate":"2024-12-25","customer_name":"Lucas Wright","PorscheModel":"911 Carrera Cabriolet","ModelYear":2023,"SalesPrice":127800.0,"VehicleMileage":12000,"PayMethod":"Credit Card","City":"Atlanta","State":"GA","salesperson":"rachel turner","DeliveryStatus":"Delivered"},{"sale_id":21,"SaleDate":"2025-01-06","customer_name":"Harper Scott","PorscheModel":"Macan","ModelYear":2021,"SalesPrice":58900.0,"VehicleMileage":33700,"PayMethod":"Bank Transfer","City":"Orlando","State":"FL","salesperson":"Chris Moore","DeliveryStatus":"Pending"},{"sale_id":23,"SaleDate":"2025-02-14","customer_name":"Evelyn Nguyen","PorscheModel":"Taycan Cross Turismo","ModelYear":2023,"SalesPrice":118500.0,"VehicleMileage":7800,"PayMethod":"Wire Transfer","City":"Charlotte","State":"NC","salesperson":"Martin Young","DeliveryStatus":"Delivered"},{"sale_id":25,"SaleDate":"2025-03-21","customer_name":"Abigail Carter","PorscheModel":"911 Targa 4S","ModelYear":2024,"SalesPrice":158750.0,"VehicleMileage":2500,"PayMethod":"Lease","City":"Minneapolis","State":"MN","salesperson":"Steve Gray","DeliveryStatus":"Delivered"},{"sale_id":26,"SaleDate":"2025-03-28","customer_name":"Jack Mitchell","PorscheModel":"Panamera","ModelYear":2020,"SalesPrice":72000.0,"VehicleMileage":49000,"PayMethod":"Bank Transfer","City":"Philadelphia","State":"PA","salesperson":"Olivia Ross","DeliveryStatus":"Cancelled"},{"sale_id":27,"SaleDate":"2025-04-09","customer_name":"Emily Perez","PorscheModel":"Macan Electric","ModelYear":2025,"SalesPrice":86500.0,"VehicleMileage":0,"PayMethod":"Wire Transfer","City":"San Antonio","State":"TX","salesperson":"Patrick Wood","DeliveryStatus":"Delivered"},{"sale_id":29,"SaleDate":"2025-05-12","customer_name":"Sofia Turner","PorscheModel":"Taycan GTS","ModelYear":2023,"SalesPrice":139000.0,"VehicleMileage":6250,"PayMethod":"Financing","City":"Raleigh","State":"NC","salesperson":"Justin Cox","DeliveryStatus":"In Transit"},{"sale_id":30,"SaleDate":"2025-06-18","customer_name":"Mason Phillips","PorscheModel":"Cayenne","ModelYear":2021,"SalesPrice":76800.0,"VehicleMileage":38400,"PayMethod":"Credit Card","City":"Detroit","State":"MI","salesperson":"Betty Ward","DeliveryStatus":"Delivered"},{"sale_id":32,"SaleDate":"2025-07-07","customer_name":"Logan Parker","PorscheModel":"911 Carrera GTS","ModelYear":2022,"SalesPrice":119900.0,"VehicleMileage":13600,"PayMethod":"Cash","City":"Indianapolis","State":"IN","salesperson":"maria foster","DeliveryStatus":"Delivered"},{"sale_id":33,"SaleDate":"2025-07-22","customer_name":"Grace Evans","PorscheModel":"Panamera 4 E-Hybrid","ModelYear":2023,"SalesPrice":109250.0,"VehicleMileage":8900,"PayMethod":"Lease","City":"Fort Worth","State":"TX","salesperson":"Harold Bennett","DeliveryStatus":"In Transit"},{"sale_id":34,"SaleDate":"2025-08-14","customer_name":"Jacob Edwards","PorscheModel":"Macan T","ModelYear":2022,"SalesPrice":82000.0,"VehicleMileage":21750,"PayMethod":"Wire Transfer","City":"Jacksonville","State":"FL","salesperson":"Teresa Cook","DeliveryStatus":"Delivered"},{"sale_id":35,"SaleDate":"2025-09-01","customer_name":"Victoria Collins","PorscheModel":"Taycan Turbo S","ModelYear":2025,"SalesPrice":214000.0,"VehicleMileage":0,"PayMethod":"Crypto Payment","City":"San Diego","State":"CA","salesperson":"Frank Morgan","DeliveryStatus":"Pending Review"},{"sale_id":37,"SaleDate":"2025-09-18","customer_name":"Chloe Bennett","PorscheModel":"Cayenne S","ModelYear":2023,"SalesPrice":98200.0,"VehicleMileage":12200,"PayMethod":"Bank Transfer","City":"Sacramento","State":"CA","salesperson":"ERIC woods","DeliveryStatus":"Pending"},{"sale_id":38,"SaleDate":"2025-10-04","customer_name":"Ryan-Cooper","PorscheModel":"Macan","ModelYear":2022,"SalesPrice":67500.0,"VehicleMileage":24100,"PayMethod":"Financing","City":"Cleveland","State":"OH","salesperson":"Patricia Fox","DeliveryStatus":"Delivered"},{"sale_id":39,"SaleDate":"2025-10-12","customer_name":"Hannah Reed","PorscheModel":"Taycan","ModelYear":2025,"SalesPrice":116900.0,"VehicleMileage":0,"PayMethod":"Wire Transfer","City":"Milwaukee","State":"WI","salesperson":"alan price","DeliveryStatus":"In Transit"},{"sale_id":40,"SaleDate":"2025-10-29","customer_name":"Dylan Parker","PorscheModel":"Panamera 4S","ModelYear":2024,"SalesPrice":112000.0,"VehicleMileage":10,"PayMethod":"Cash","City":"Kansas City","State":"MO","salesperson":"Sandra Hill","DeliveryStatus":"Delivered"},{"sale_id":41,"SaleDate":"2025-02-11","customer_name":"Lily Coleman","PorscheModel":"718 Boxster","ModelYear":2021,"SalesPrice":74000.0,"VehicleMileage":31000,"PayMethod":"Debit Card","City":"Omaha","State":"NE","salesperson":"Victor Lee","DeliveryStatus":"Cancelled"},{"sale_id":42,"SaleDate":"2025-11-16","customer_name":"Nathan Hughes","PorscheModel":"911 Turbo","ModelYear":2024,"SalesPrice":198300.0,"VehicleMileage":2400,"PayMethod":"Wire Transfer","City":"Albuquerque","State":"NM","salesperson":"monica","DeliveryStatus":"Awaiting Delivery"},{"sale_id":45,"SaleDate":"2025-12-07","customer_name":"Stella Brooks","PorscheModel":"Taycan 4S","ModelYear":2025,"SalesPrice":129000.0,"VehicleMileage":0,"PayMethod":"ACH Payment","City":"Virginia Beach","State":"VA","salesperson":"Henry King","DeliveryStatus":"In Transit"},{"sale_id":46,"SaleDate":"2025-12-22","customer_name":"Owen Bryant","PorscheModel":"Panamera Turbo","ModelYear":2022,"SalesPrice":136000.0,"VehicleMileage":18400,"PayMethod":"Credit Card","City":"Colorado Springs","State":"CO","salesperson":"amber clark","DeliveryStatus":"Delivered"},{"sale_id":48,"SaleDate":"2026-01-08","customer_name":"Isaac Butler","PorscheModel":"Cayenne E-Hybrid","ModelYear":2023,"SalesPrice":92800.0,"VehicleMileage":15000,"PayMethod":"Lease","City":"Bakersfield","State":"CA","salesperson":"Grace Morris","DeliveryStatus":"Delivered"},{"sale_id":49,"SaleDate":"2026-01-15","customer_name":"Leah Henderson","PorscheModel":"Macan T","ModelYear":2022,"SalesPrice":72400.0,"VehicleMileage":19750,"PayMethod":"Cash","City":"Mesa","State":"AZ","salesperson":"Kyle Perry","DeliveryStatus":"Awaiting Pickup"},{"sale_id":50,"SaleDate":"2026-01-28","customer_name":"Christian Bailey","PorscheModel":"Taycan Turbo","ModelYear":2025,"SalesPrice":158500.0,"VehicleMileage":3200,"PayMethod":"Crypto Payment","City":"Atlanta","State":"GA","salesperson":"megan reed","DeliveryStatus":"Delivered"},{"sale_id":51,"SaleDate":"2026-02-03","customer_name":"Audrey Russell","PorscheModel":"718 Cayman","ModelYear":2021,"SalesPrice":69900.0,"VehicleMileage":27600,"PayMethod":"Bank Transfer","City":"Long Beach","State":"CA","salesperson":"Carl Simmons","DeliveryStatus":"Pending"},{"sale_id":53,"SaleDate":"2026-02-19","customer_name":"Scarlett Diaz","PorscheModel":"Panamera","ModelYear":2020,"SalesPrice":71500.0,"VehicleMileage":52000,"PayMethod":"Wire Transfer","City":"Tulsa","State":"OK","salesperson":"Martin Brooks","DeliveryStatus":"Delivered"},{"sale_id":54,"SaleDate":"2026-02-25","customer_name":"Eli Jenkins","PorscheModel":"Cayenne Turbo","ModelYear":2023,"SalesPrice":146800.0,"VehicleMileage":11300,"PayMethod":"Credit Card","City":"Wichita","State":"KS","salesperson":"Diana Long","DeliveryStatus":"Pending"},{"sale_id":55,"SaleDate":"2026-03-01","customer_name":"Madison Powell","PorscheModel":"Macan Electric","ModelYear":2025,"SalesPrice":89700.0,"VehicleMileage":0,"PayMethod":"Lease","City":"New Orleans","State":"LA","salesperson":"Steve Ross","DeliveryStatus":"Delivered"},{"sale_id":56,"SaleDate":"2026-03-14","customer_name":"Adrian Sanders","PorscheModel":"911 Carrera S","ModelYear":2022,"SalesPrice":104600.0,"VehicleMileage":15900,"PayMethod":"Bank Transfer","City":"Honolulu","State":"HI","salesperson":"Olivia Cruz","DeliveryStatus":"Cancelled"},{"sale_id":58,"SaleDate":"2026-04-08","customer_name":"Nolan Fisher","PorscheModel":"Cayenne","ModelYear":2021,"SalesPrice":78400.0,"VehicleMileage":40250,"PayMethod":"Cash","City":"Henderson","State":"NV","salesperson":"Karen Stone","DeliveryStatus":"Awaiting Review"},{"sale_id":60,"SaleDate":"2026-04-21","customer_name":"Gabriel Owens","PorscheModel":"911 Dakar","ModelYear":2024,"SalesPrice":268900.0,"VehicleMileage":1400,"PayMethod":"Credit Card","City":"Riverside","State":"CA","salesperson":"Betty James","DeliveryStatus":"Delivered"},{"sale_id":61,"SaleDate":"2026-04-29","customer_name":"Victoria Hart","PorscheModel":"Panamera 4","ModelYear":2023,"SalesPrice":101300.0,"VehicleMileage":12700,"PayMethod":"Wire Transfer","City":"Corpus Christi","State":"TX","salesperson":"Gary Price","DeliveryStatus":"Pending"},{"sale_id":62,"SaleDate":"2026-05-05","customer_name":"Julian Stone","PorscheModel":"Macan S","ModelYear":2021,"SalesPrice":66750.0,"VehicleMileage":29800,"PayMethod":"Cash","City":"St. Louis","State":"MO","salesperson":"maria green","DeliveryStatus":"Delivered"},{"sale_id":63,"SaleDate":"2026-05-14","customer_name":"Brooklyn Webb","PorscheModel":"Taycan Cross Turismo","ModelYear":2024,"SalesPrice":127900.0,"VehicleMileage":7500,"PayMethod":"Lease","City":"Pittsburgh","State":"PA","salesperson":"Harold Young","DeliveryStatus":"In Transit"},{"sale_id":64,"SaleDate":"2026-05-23","customer_name":"Aaron Kim","PorscheModel":"Cayenne Turbo GT","ModelYear":2025,"SalesPrice":200000.0,"VehicleMileage":1950,"PayMethod":"Wire Transfer","City":"Cincinnati","State":"OH","salesperson":"Teresa Ward","DeliveryStatus":"Delivered"},{"sale_id":65,"SaleDate":"2026-06-02","customer_name":"Claire Watson","PorscheModel":"911 Carrera Cabriolet","ModelYear":2023,"SalesPrice":132000.0,"VehicleMileage":8800,"PayMethod":"Crypto Payment","City":"Anchorage","State":"AK","salesperson":"Frank Reed","DeliveryStatus":"Pending Review"},{"sale_id":66,"SaleDate":"2026-06-15","customer_name":"Sebastian Brooks","PorscheModel":"718 Cayman GT4 RS","ModelYear":2024,"SalesPrice":176400.0,"VehicleMileage":600,"PayMethod":"Credit Card","City":"Plano","State":"TX","salesperson":"Angela Moore","DeliveryStatus":"Delivered"},{"sale_id":68,"SaleDate":"2026-07-07","customer_name":"Miles Peterson","PorscheModel":"Macan","ModelYear":2021,"SalesPrice":59000.0,"VehicleMileage":36000,"PayMethod":"Financing","City":"Greensboro","State":"NC","salesperson":"Thomas Fox","DeliveryStatus":"Awaiting Delivery"},{"sale_id":69,"SaleDate":"2026-07-20","customer_name":"Skylar Rogers","PorscheModel":"Taycan Turbo S","ModelYear":2025,"SalesPrice":218000.0,"VehicleMileage":0,"PayMethod":"Wire Transfer","City":"Lincoln","State":"NE","salesperson":"LISA Dunn","DeliveryStatus":"Pending"},{"sale_id":71,"SaleDate":"2026-04-08","customer_name":"Lucy Howard","PorscheModel":"911 Carrera GTS","ModelYear":2024,"SalesPrice":121750.0,"VehicleMileage":5872,"PayMethod":"Credit Card","City":"Chandler","State":"AZ","salesperson":"George Hall","DeliveryStatus":"Delivered"},{"sale_id":72,"SaleDate":"2026-08-18","customer_name":"Everett Cox","PorscheModel":"718 Boxster GTS","ModelYear":2023,"SalesPrice":91500.0,"VehicleMileage":13300,"PayMethod":"Lease","City":"Reno","State":"NV","salesperson":"Helen King","DeliveryStatus":"Shipped"},{"sale_id":73,"SaleDate":"2026-08-31","customer_name":"Maya Rivera","PorscheModel":"Panamera Turbo S","ModelYear":2022,"SalesPrice":134000.0,"VehicleMileage":20100,"PayMethod":"Wire Transfer","City":"Buffalo","State":"NY","salesperson":"samuel price","DeliveryStatus":"In Transit"},{"sale_id":74,"SaleDate":"2026-09-09","customer_name":"Connor Ward","PorscheModel":"Macan GTS","ModelYear":2024,"SalesPrice":96800.0,"VehicleMileage":0,"PayMethod":"ACH Payment","City":"Durham","State":"NC","salesperson":"Peter Ford","DeliveryStatus":"Delivered"},{"sale_id":75,"SaleDate":"2026-09-17","customer_name":"Eliana Bell","PorscheModel":"Taycan 4S","ModelYear":2025,"SalesPrice":131600.0,"VehicleMileage":2900,"PayMethod":"Wire Transfer","City":"Laredo","State":"TX","salesperson":"Angela Green","DeliveryStatus":"Pending Approval"},{"sale_id":76,"SaleDate":"2026-09-28","customer_name":"Cameron Murphy","PorscheModel":"Cayenne E-Hybrid","ModelYear":2023,"SalesPrice":94300.0,"VehicleMileage":13100,"PayMethod":"Cash","City":"Madison","State":"WI","salesperson":"Victor Stone","DeliveryStatus":"Delivered"},{"sale_id":77,"SaleDate":"2026-10-06","customer_name":"Ariana Cook","PorscheModel":"911 Turbo S","ModelYear":2025,"SalesPrice":242000.0,"VehicleMileage":1100,"PayMethod":"Crypto Payment","City":"Lubbock","State":"TX","salesperson":"Rachel Turner","DeliveryStatus":"Awaiting Pickup"},{"sale_id":78,"SaleDate":"2026-10-16","customer_name":"Wesley Morgan","PorscheModel":"718 Cayman S","ModelYear":2022,"SalesPrice":82750.0,"VehicleMileage":22500,"PayMethod":"Credit Card","City":"Toledo","State":"OH","salesperson":"Chris Moore","DeliveryStatus":"Cancelled"},{"sale_id":79,"SaleDate":"2026-10-29","customer_name":"Naomi Peterson","PorscheModel":"Macan Electric","ModelYear":2026,"SalesPrice":91300.0,"VehicleMileage":0,"PayMethod":"Wire Transfer","City":"Irvine","State":"CA","salesperson":"LAURA Hill","DeliveryStatus":"Delivered"},{"sale_id":80,"SaleDate":"2026-11-03","customer_name":"Jason Perry","PorscheModel":"Panamera","ModelYear":2021,"SalesPrice":79900.0,"VehicleMileage":44800,"PayMethod":"Financing","City":"Garland","State":"TX","salesperson":"Martin Young","DeliveryStatus":"Pending"},{"sale_id":82,"SaleDate":"2026-12-11","customer_name":"Hazel Long","PorscheModel":"911 Targa 4S","ModelYear":2023,"SalesPrice":156500.0,"VehicleMileage":4200,"PayMethod":"Cash","City":"Chesapeake","State":"VA","salesperson":"Steve Gray","DeliveryStatus":"Delivered"},{"sale_id":83,"SaleDate":"2026-12-24","customer_name":"Easton Bailey","PorscheModel":"Taycan","ModelYear":2025,"SalesPrice":119900.0,"VehicleMileage":1250,"PayMethod":"Lease","City":"Scottsdale","State":"AZ","salesperson":"Olivia Ross","DeliveryStatus":"Pending"},{"sale_id":85,"SaleDate":"2026-12-28","customer_name":"Colton Richardson","PorscheModel":"911 GT3","ModelYear":2024,"SalesPrice":224000.0,"VehicleMileage":3000,"PayMethod":"Wire Transfer","City":"Boise","State":"ID","salesperson":"Karen Diaz","DeliveryStatus":"Awaiting Delivery"},{"sale_id":86,"SaleDate":"2027-01-15","customer_name":"Mason Stewart","PorscheModel":"911 Carrera","ModelYear":2024,"SalesPrice":126900.0,"VehicleMileage":7200,"PayMethod":"Credit Card","City":"Orlando","State":"FL","salesperson":"kevin brown","DeliveryStatus":"Delivered"},{"sale_id":87,"SaleDate":"2027-01-29","customer_name":"Harper Reed","PorscheModel":"Cayenne","ModelYear":2023,"SalesPrice":84500.0,"VehicleMileage":21400,"PayMethod":"Bank Transfer","City":"San Jose","State":"CA","salesperson":"AMANDA Lee","DeliveryStatus":"Pending"},{"sale_id":88,"SaleDate":"2027-02-11","customer_name":"Tyler-Morris","PorscheModel":"Macan S","ModelYear":2022,"SalesPrice":69800.0,"VehicleMileage":26300,"PayMethod":"Financing","City":"Tampa","State":"FL","salesperson":"Brian Hall","DeliveryStatus":"Delivered"},{"sale_id":90,"SaleDate":"2027-03-05","customer_name":"Brandon Parker","PorscheModel":"Panamera","ModelYear":2021,"SalesPrice":81000.0,"VehicleMileage":42,"PayMethod":"Cash","City":"Austin","State":"TX","salesperson":"Thomas King","DeliveryStatus":"Delivered"},{"sale_id":91,"SaleDate":"2027-03-18","customer_name":"Lauren Foster","PorscheModel":"718 Cayman","ModelYear":2023,"SalesPrice":78900.0,"VehicleMileage":17500,"PayMethod":"Debit Card","City":"Seattle","State":"WA","salesperson":"Victor Lee","DeliveryStatus":"Cancelled"},{"sale_id":92,"SaleDate":"2027-04-02","customer_name":"Adam Hughes","PorscheModel":"911 Turbo S","ModelYear":2026,"SalesPrice":249300.0,"VehicleMileage":900,"PayMethod":"Wire Transfer","City":"Boston","State":"MA","salesperson":"monica green","DeliveryStatus":"Awaiting Delivery"},{"sale_id":95,"SaleDate":"2027-05-12","customer_name":"Ariana Price","PorscheModel":"Taycan Turbo","ModelYear":2025,"SalesPrice":164000.0,"VehicleMileage":0,"PayMethod":"ACH Payment","City":"Dallas","State":"TX","salesperson":"Henry King","DeliveryStatus":"In Transit"},{"sale_id":96,"SaleDate":"2027-05-27","customer_name":"Owen Rivera","PorscheModel":"Panamera 4S","ModelYear":2024,"SalesPrice":119000.0,"VehicleMileage":13400,"PayMethod":"Credit Card","City":"San Francisco","State":"CA","salesperson":"amber clark","DeliveryStatus":"Delivered"},{"sale_id":98,"SaleDate":"2027-06-18","customer_name":"Isaac Turner","PorscheModel":"Cayenne E-Hybrid","ModelYear":2023,"SalesPrice":96800.0,"VehicleMileage":14000,"PayMethod":"Lease","City":"Charlotte","State":"NC","salesperson":"Grace Morris","DeliveryStatus":"Delivered"},{"sale_id":99,"SaleDate":"2027-07-03","customer_name":"Leah Scott","PorscheModel":"Macan T","ModelYear":2022,"SalesPrice":74400.0,"VehicleMileage":20750,"PayMethod":"Cash","City":"Mesa","State":"AZ","salesperson":"Kyle Perry","DeliveryStatus":"Awaiting Pickup"},{"sale_id":100,"SaleDate":"2027-07-22","customer_name":"Christian Bailey","PorscheModel":"Taycan GTS","ModelYear":2025,"SalesPrice":148500.0,"VehicleMileage":5200,"PayMethod":"Crypto Payment","City":"Atlanta","State":"GA","salesperson":"megan reed","DeliveryStatus":"Delivered"},{"sale_id":101,"SaleDate":"2027-08-08","customer_name":"Audrey Russell","PorscheModel":"718 Boxster","ModelYear":2021,"SalesPrice":71900.0,"VehicleMileage":29600,"PayMethod":"Bank Transfer","City":"Long Beach","State":"CA","salesperson":"Carl Simmons","DeliveryStatus":"Pending"},{"sale_id":103,"SaleDate":"2027-09-19","customer_name":"Scarlett Diaz","PorscheModel":"Panamera Turbo","ModelYear":2020,"SalesPrice":137500.0,"VehicleMileage":48000,"PayMethod":"Wire Transfer","City":"Tulsa","State":"OK","salesperson":"Martin Brooks","DeliveryStatus":"Delivered"},{"sale_id":104,"SaleDate":"2027-09-25","customer_name":"Eli Jenkins","PorscheModel":"Cayenne Turbo GT","ModelYear":2025,"SalesPrice":204800.0,"VehicleMileage":3300,"PayMethod":"Credit Card","City":"Wichita","State":"KS","salesperson":"Diana Long","DeliveryStatus":"Pending"},{"sale_id":105,"SaleDate":"2027-10-01","customer_name":"Madison Powell","PorscheModel":"911 Dakar","ModelYear":2024,"SalesPrice":271700.0,"VehicleMileage":1050,"PayMethod":"Lease","City":"New Orleans","State":"LA","salesperson":"Steve Ross","DeliveryStatus":"Delivered"}];
-
         let charts = {};
         
         // Formatação Monetária BR
@@ -116,6 +111,9 @@
         
         // Fator de Conversão de Milhas para Quilómetros
         const MI_TO_KM = 1.60934;
+
+        // Paleta de cores expandida (9 cores) para não repetir no gráfico de rosca
+        const porschePalette = ['#D5001C', '#8A8D8F', '#4B4C4D', '#2B2B2B', '#1a1a1a', '#ff4d4d', '#cccccc', '#666666', '#333333'];
 
         // Defaults Globais
         Chart.defaults.color = '#8A8D8F';
@@ -150,7 +148,6 @@
             createOpts(statuses, 'statusFilter');
         }
 
-        // Função auxiliar para determinar o trimestre
         function getQuarter(dateStr) {
             const d = new Date(dateStr);
             const q = Math.floor(d.getMonth() / 3) + 1;
@@ -168,7 +165,6 @@
             const stateFilter = document.getElementById('stateFilter').value;
             const statusFilter = document.getElementById('statusFilter').value;
 
-            // Filtro Cruzado
             const filteredData = rawData.filter(d => {
                 return (yearFilter === 'All' || d.ModelYear.toString() === yearFilter) &&
                        (stateFilter === 'All' || d.State === stateFilter) &&
@@ -180,16 +176,14 @@
             const volume = filteredData.length;
             const avgTicket = volume > 0 ? totalRevenue / volume : 0;
             const avgMileage = volume > 0 ? filteredData.reduce((acc, val) => acc + val.VehicleMileage, 0) / volume : 0;
-            const avgKm = avgMileage * MI_TO_KM; // Conversão para Quilómetros
+            const avgKm = avgMileage * MI_TO_KM;
 
             document.getElementById('kpiRevenue').textContent = currencyFmt.format(totalRevenue);
             document.getElementById('kpiAvgTicket').textContent = currencyFmt.format(avgTicket);
             document.getElementById('kpiVolume').textContent = volume;
             document.getElementById('kpiMileage').textContent = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 0 }).format(avgKm) + ' km';
 
-            // --- Dados para Gráficos ---
-
-            // 1. Receita no Tempo (Por Trimestre)
+            // --- Dados ---
             const revenueByQuarter = {};
             filteredData.forEach(d => {
                 const q = getQuarter(d.SaleDate);
@@ -203,15 +197,12 @@
             });
             const lineData = lineLabels.map(q => revenueByQuarter[q]);
 
-            // 2. Dispersão (Preço x Quilometragem)
             const scatterData = filteredData.map(d => ({ x: Math.round(d.VehicleMileage * MI_TO_KM), y: d.SalesPrice }));
 
-            // 3. Receita por Modelo (Top 10 - Ordenado)
             const revByModel = {};
             filteredData.forEach(d => { revByModel[d.PorscheModel] = (revByModel[d.PorscheModel] || 0) + d.SalesPrice; });
             const sortedModels = Object.entries(revByModel).sort((a,b) => b[1] - a[1]).slice(0, 10);
 
-            // 4. Pagamento (Rosca - Agrupando categorias pequenas em "Outros")
             const payMethods = {};
             filteredData.forEach(d => { payMethods[d.PayMethod] = (payMethods[d.PayMethod] || 0) + 1; });
             
@@ -220,7 +211,7 @@
             let outrosCount = 0;
             
             Object.entries(payMethods).sort((a,b) => b[1] - a[1]).forEach(([method, count]) => {
-                if (count / volume < 0.05) { // Se for menos de 5% do total, vai para 'Outros'
+                if (count / volume < 0.05) { 
                     outrosCount += count;
                 } else {
                     doughnutLabels.push(method);
@@ -233,36 +224,27 @@
             }
 
             // --- Renderizar ---
-            
-            // Gráfico de Linha (Trimestral)
             renderChart('lineChart', 'line', {
                 labels: lineLabels,
-                datasets: [{
-                    label: 'Receita (R$)', data: lineData, borderColor: '#D5001C', backgroundColor: 'rgba(213, 0, 28, 0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#fff'
-                }]
+                datasets: [{ label: 'Receita (R$)', data: lineData, borderColor: '#D5001C', backgroundColor: 'rgba(213, 0, 28, 0.1)', fill: true, tension: 0.4, pointRadius: 4, pointBackgroundColor: '#fff' }]
             }, true);
 
-            // Gráfico de Dispersão (km)
             renderChart('scatterChart', 'scatter', {
-                datasets: [{
-                    label: 'Veículos', data: scatterData, backgroundColor: 'rgba(213, 0, 28, 0.6)', borderColor: '#D5001C', pointRadius: 6, pointHoverRadius: 8
-                }]
+                datasets: [{ label: 'Veículos', data: scatterData, backgroundColor: 'rgba(213, 0, 28, 0.6)', borderColor: '#D5001C', pointRadius: 6, pointHoverRadius: 8 }]
             }, true, true);
 
-            // Gráfico de Barras (Modelos)
             renderChart('modelChart', 'bar', {
                 labels: sortedModels.map(x => x[0]),
                 datasets: [{ label: 'Receita', data: sortedModels.map(x => x[1]), backgroundColor: '#D5001C', hoverBackgroundColor: '#f00', borderRadius: 4 }]
             }, true, false, 'y');
 
-            // Gráfico de Rosca (com Datalabels para Porcentagem)
             const ctxDoughnut = document.getElementById('doughnutChart').getContext('2d');
             if (charts['doughnutChart']) charts['doughnutChart'].destroy();
             charts['doughnutChart'] = new Chart(ctxDoughnut, {
                 type: 'doughnut',
                 data: {
                     labels: doughnutLabels,
-                    datasets: [{ data: doughnutData, backgroundColor: ['#D5001C', '#8A8D8F', '#4B4C4D', '#2B2B2B', '#1a1a1a'], borderWidth: 0 }]
+                    datasets: [{ data: doughnutData, backgroundColor: porschePalette, borderWidth: 0 }]
                 },
                 options: {
                     responsive: true, maintainAspectRatio: false,
@@ -274,8 +256,7 @@
                                 let sum = 0;
                                 let dataArr = ctx.chart.data.datasets[0].data;
                                 dataArr.map(data => { sum += data; });
-                                let percentage = (value * 100 / sum).toFixed(1) + "%";
-                                return percentage;
+                                return (value * 100 / sum).toFixed(1) + "%";
                             },
                             font: { weight: 'bold', size: 12 }
                         }
@@ -293,32 +274,31 @@
                 indexAxis: indexAxis,
                 plugins: {
                     legend: { display: false },
-                    datalabels: { display: false },
+                    datalabels: { display: false }, 
                     tooltip: {
                         callbacks: {
                             label: function(ctx) {
-                                if (isScatter) {
-                                    return `Odómetro: ${ctx.parsed.x} km | Preço: ${currencyFmt.format(ctx.parsed.y)}`;
-                                }
+                                if (isScatter) return `Odómetro: ${ctx.parsed.x} km | Preço: ${currencyFmt.format(ctx.parsed.y)}`;
                                 let val = ctx.parsed[indexAxis === 'y' ? 'x' : 'y'] || ctx.parsed;
                                 return isCurrency ? currencyFmt.format(val) : val;
                             }
                         }
                     }
-                }
+                },
+                scales: {}
             };
 
             if (type !== 'doughnut') {
-                options.scales = {
-                    x: {
-                        grid: { display: isScatter || type === 'line' },
-                        ticks: { callback: function(val) { return (isCurrency && indexAxis === 'y' && !isScatter) ? formatK(val) : val; } }
-                    },
-                    y: {
-                        grid: { display: true },
-                        ticks: { callback: function(val) { return (isCurrency && indexAxis === 'x' || isScatter) ? formatK(val) : val; } }
-                    }
-                };
+                // Configuração cuidadosa para não sobrepor os rótulos das categorias
+                options.scales.x = { grid: { display: isScatter || type === 'line' } };
+                if (isScatter || (isCurrency && indexAxis === 'y')) {
+                    options.scales.x.ticks = { callback: function(val) { return formatK(val); } };
+                }
+
+                options.scales.y = { grid: { display: true } };
+                if (isScatter || (isCurrency && indexAxis === 'x')) {
+                    options.scales.y.ticks = { callback: function(val) { return formatK(val); } };
+                }
             }
 
             charts[id] = new Chart(ctx, { type: type, data: data, options: options });
