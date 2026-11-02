@@ -255,7 +255,7 @@
                 datasets: [{ label: 'Receita', data: sortedModels.map(x => x[1]), backgroundColor: '#D5001C', hoverBackgroundColor: '#f00', borderRadius: 4 }]
             }, true, false, 'y');
 
-            // Gráfico de Rosca (com Datalabels para Percentagem)
+            // Gráfico de Rosca (com Datalabels para Porcentagem)
             const ctxDoughnut = document.getElementById('doughnutChart').getContext('2d');
             if (charts['doughnutChart']) charts['doughnutChart'].destroy();
             charts['doughnutChart'] = new Chart(ctxDoughnut, {
@@ -293,7 +293,7 @@
                 indexAxis: indexAxis,
                 plugins: {
                     legend: { display: false },
-                    datalabels: { display: false }, // Esconde datalabels nos gráficos de barras/linhas
+                    datalabels: { display: false },
                     tooltip: {
                         callbacks: {
                             label: function(ctx) {
