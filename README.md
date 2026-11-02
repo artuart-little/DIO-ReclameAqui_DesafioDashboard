@@ -3,7 +3,6 @@
 **🚀 Aceda ao dashboard em produção:** [https://github.com/artuart-little/DIO-ReclameAqui_DesafioDashboard](https://github.com/artuart-little/DIO-ReclameAqui_DesafioDashboard)
 
 ![Preview do Dashboard](./image.png)
-*(Substitua o caminho acima por um print do ecrã inteiro do seu dashboard)*
 
 ---
 
