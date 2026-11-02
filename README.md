@@ -2,7 +2,7 @@
 
 **🚀 Aceda ao dashboard em produção:** [https://github.com/artuart-little/DIO-ReclameAqui_DesafioDashboard](https://github.com/artuart-little/DIO-ReclameAqui_DesafioDashboard)
 
-![Preview do Dashboard](./caminho-para-o-seu-print-geral.png)
+![Preview do Dashboard](C:\Users\Artur\cdia\Cursos_EAD\dio\Reclame_aqui\a\image.png)
 *(Substitua o caminho acima por um print do ecrã inteiro do seu dashboard)*
 
 ---
@@ -46,7 +46,7 @@ Em vez de aceitar a primeira versão gerada pela IA, apliquei conceitos crítico
 
 Abaixo está o exemplo do dashboard a reagir aos filtros aplicados (ex: Filtrando por Ano e Estado), atualizando instantaneamente os KPIs e todos os gráficos:
 
-![Dashboard com Filtro Aplicado](./print-filtro.png)
+![Dashboard com Filtro Aplicado](C:\Users\Artur\cdia\Cursos_EAD\dio\Reclame_aqui\a\image2.png)
 *(Lembre-se de substituir `print-filtro.png` por uma captura de ecrã com alguns dropdowns selecionados)*
 
 ---
